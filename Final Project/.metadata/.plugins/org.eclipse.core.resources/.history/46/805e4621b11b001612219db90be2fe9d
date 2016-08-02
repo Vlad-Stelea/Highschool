@@ -1,0 +1,44 @@
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+
+public abstract class Server extends User {
+	protected int port;
+	protected ArrayList<Socket> joinedUserSockets;
+	protected ArrayList<User> joinedUsers;
+	protected ArrayList<ObjectOutputStream> outStreams;
+	protected ArrayList<ObjectInputStream> inStreams;
+	protected ArrayList<Message> messages;
+	protected List <Message> safeMessages;
+	public Server(String user) {
+		// TODO Auto-generated constructor stub
+		super(user);
+		joinedUsers = new ArrayList<User>();
+		joinedUserSockets = new ArrayList<Socket>();
+		messages = new ArrayList<Message>();
+		safeMessages = Collections.synchronizedList(messages);
+		outStreams = new ArrayList<ObjectOutputStream>();
+		inStreams= new ArrayList<ObjectInputStream>();
+	}
+	
+	public int getPort(){
+		return port;
+	}
+	
+	public ArrayList<User> getJoinedUsers(){
+		return joinedUsers;
+	}
+	
+	public abstract void sendMessage(Message m)throws IOException;
+		
+
+	
+
+}

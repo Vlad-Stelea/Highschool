@@ -1,0 +1,85 @@
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.net.SocketTimeoutException;
+import java.net.UnknownHostException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Client extends User {
+	private InetAddress connectedIP;
+	private int connectedPort;
+	private ArrayList<Message> knownMessages;
+	private Socket sock;
+	private ObjectInputStream in;
+	private ObjectOutputStream out;
+	//TODO write constructor
+	public Client(Server s,String user) throws IOException {
+		super(user);
+		//starts socket
+		if(s!=null){
+		connectedIP = s.getIP();
+		connectedPort = s.getPort();
+		sock = new Socket(connectedIP,connectedPort);
+		knownMessages =new ArrayList<Message>();
+		out = new ObjectOutputStream(sock.getOutputStream());
+		in = new ObjectInputStream(sock.getInputStream());
+		System.out.println("Connected" + sock.isConnected());
+		sock.setSoTimeout(100);
+		}
+	}
+	public Client(String IP,int port,String user) throws UnknownHostException, IOException,SocketTimeoutException{
+		super(user);
+		connectedPort = port;
+		System.out.println("Start sock");
+		sock = new Socket();
+		sock.connect(new InetSocketAddress(IP,port), 500);
+		System.out.println("Done Sock");
+		knownMessages =new ArrayList<Message>();
+		out = new ObjectOutputStream(sock.getOutputStream());
+		System.out.println("Done Out");
+		in = new ObjectInputStream(sock.getInputStream());
+		System.out.println("Done in");
+		System.out.println("Connected " + sock.isConnected());
+		sock.setSoTimeout(100);
+	}
+	//TODO write sendMessage
+	public void sendMessage(Message m) throws IOException {
+		try{
+		out.writeObject(m);
+		}catch(java.net.SocketTimeoutException e){
+			System.out.println("Timeout");
+		}
+	}
+	
+	public ArrayList<Message> readMessage() throws ClassNotFoundException, IOException{
+		ArrayList<Message> newMes = new ArrayList<Message>();
+		try{
+			//newMes.addAll();
+			newMes.addAll((ArrayList<Message>)in.readObject());
+		}catch(java.net.SocketTimeoutException e){/*Doesnt actually do anything*/}
+		System.out.println(knownMessages);
+		return newMes;
+		}
+	
+	
+	public InetAddress getConnectedIP(){
+		return connectedIP;
+	}
+	
+	public int getConnectedPort(){
+		return connectedPort;
+	}
+	
+	public ArrayList<Message> refreshMessages(int start, int end){
+		return (ArrayList<Message>)knownMessages.subList(start, end +1);
+	}
+	
+
+	//start of private methods
+
+}

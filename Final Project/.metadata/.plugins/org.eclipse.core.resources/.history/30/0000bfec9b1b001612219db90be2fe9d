@@ -1,0 +1,59 @@
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.util.ArrayList;
+
+
+public class Client extends User {
+	private InetAddress connectedIP;
+	private int connectedPort;
+	private ArrayList<Message> knownMessages;
+	private Socket sock;
+	private ObjectInputStream in;
+	private ObjectOutputStream out;
+	//TODO write constructor
+	public Client(Server s,String user) throws IOException {
+		super(user);
+		//starts socket
+		if(s!=null){
+		connectedIP = s.getIP();
+		connectedPort = s.getPort();
+		sock = new Socket(connectedIP,connectedPort);
+		out = new ObjectOutputStream(sock.getOutputStream());
+		in = new ObjectInputStream(sock.getInputStream());
+		System.out.println("Connected" + sock.isConnected());
+		}
+	}
+	//TODO write sendMessage
+	@Override
+	public void sendMessage(Message m) throws IOException {
+		// TODO Auto-generated method stub
+		out.writeObject(new String("TEst"));
+		//System.out.println(m);
+	}
+	
+	public void readMessage(){
+		
+	}
+	
+	public InetAddress getConnectedIP(){
+		return connectedIP;
+	}
+	
+	public int getConnectedPort(){
+		return connectedPort;
+	}
+	
+	public ArrayList<Message> refreshMessages(int start, int end){
+		return (ArrayList<Message>)knownMessages.subList(start, end +1);
+	}
+	
+
+	//start of private methods
+	
+	private void readMessages(){
+		
+	}
+}

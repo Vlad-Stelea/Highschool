@@ -1,0 +1,86 @@
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.ArrayList;
+
+
+public class Communication extends Server {
+	private String password;
+	private boolean isDiscoverable;
+	private ArrayList<Message> messageList;
+	private boolean askBeforeConnect;
+	private boolean isPassworded;
+	private ServerSocket serv;
+	private ObjectInputStream in;
+	private ObjectOutputStream out;
+	
+	public Communication(String pass,String user,int por,boolean ask, boolean discoverable) throws IOException {
+		// TODO Auto-generated constructor stub
+		super(user);
+		port = por;
+		askBeforeConnect = ask;
+		isDiscoverable = discoverable;
+		
+		if(pass == null){
+			isPassworded = false;
+		}
+		else{
+			isPassworded = true;
+		}
+		//start server
+		serv = new ServerSocket(port);
+		System.out.println("Started Server");
+		Thread t = new Thread(new Runnable(){
+
+			@Override
+			public void run() {
+				try {
+					acceptUser(true);
+					System.out.println("accepted user");
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			
+		});
+		t.start();
+		
+		
+	}
+
+	@Override
+	public void sendMessage(Message m) {
+		// TODO Auto-generated method stub
+
+	}
+	public void readMessage() throws ClassNotFoundException, IOException{
+		messages.add((Message) inStreams.get(0).readObject());
+		System.out.println(messages);
+		//System.out.println("Message: " + (Message)inStreams.get(0).readObject());
+	}
+	public String getPassword(){
+		return password;
+	}
+	//TODO accepts user if b is true denies otherwise
+	public void acceptUser(boolean b) throws IOException{
+		if(b){
+			Socket s = serv.accept();
+			s.setSoTimeout(100);
+			super.joinedUserSockets.add(s);
+			super.outStreams.add(new ObjectOutputStream(s.getOutputStream()));
+			super.inStreams.add(new ObjectInputStream(s.getInputStream()));
+			outStreams.get(0).write(1);
+		}
+	}
+	//TODO kicks user
+	public void kickUser(User user){
+		
+	}
+	//TODO makes sure user can connect
+	private void authenticateUser(){
+		
+	}
+}

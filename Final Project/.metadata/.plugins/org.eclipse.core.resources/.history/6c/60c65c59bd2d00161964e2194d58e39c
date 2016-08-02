@@ -1,0 +1,175 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.DefaultListModel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextPane;
+import javax.swing.JTextArea;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JScrollBar;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JLabel;
+import javax.swing.JList;
+
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.io.IOException;
+import java.lang.reflect.Field;
+import java.net.SocketTimeoutException;
+import java.net.UnknownHostException;
+import java.util.ArrayList;
+
+import javax.swing.UIManager;
+
+
+public class ServerWindow extends JFrame {
+
+	private JPanel contentPane;
+	private JList list;
+	private JTextArea textArea;
+	private Client cl = null;
+	/**
+	 * Launch the application.
+	 */
+	/*public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					ServerWindow frame = new ServerWindow();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public ServerWindow(int port,String userName) {
+		setResizable(false);
+		setTitle("Server");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 396, 516);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		//start server
+		Communication c = null; 
+		
+		try {
+			 c = new Communication(null,userName,port,false,false);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			cl = new Client(c,userName);
+		} catch (IOException e) {
+				// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		/*try {
+			Communication c = new Communication("",userName,Integer.parseInt(port),false,false);
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		JButton btnSend = new JButton("Send");
+		btnSend.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				try {
+					cl.sendMessage(new Texts(userName,textArea.getText()));
+					textArea.setText("");
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					JOptionPane.showMessageDialog(contentPane, "Error sending message", "could not send Message", JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+		btnSend.setBackground(new Color(0, 0, 255));
+		btnSend.setForeground(new Color(255, 255, 255));
+		btnSend.setBounds(308, 417, 72, 50);
+		contentPane.add(btnSend);
+		
+		JScrollBar scrollBar = new JScrollBar();
+		scrollBar.setBounds(288, 417, 17, 61);
+		contentPane.add(scrollBar);
+		
+		textArea = new JTextArea();
+		textArea.setForeground(new Color(255, 255, 255));
+		textArea.setFont(new Font("Times New Roman", Font.PLAIN, 15));
+		textArea.setBackground(new Color(0, 0, 255));
+		textArea.setBounds(10, 417, 272, 48);
+		contentPane.add(textArea);
+		
+		JLabel lblPort = new JLabel("Port: ");
+		lblPort.setBounds(259, 11, 46, 32);
+		contentPane.add(lblPort);
+		
+		JLabel lblIp = new JLabel("IP:");
+		lblIp.setBounds(10, 11, 46, 32);
+		contentPane.add(lblIp);
+		
+		JLabel label = new JLabel(String.valueOf(port));
+		label.setBounds(299, 11, 46, 32);
+		contentPane.add(label);
+		
+		JLabel label_1 = new JLabel(c.getIP().getHostAddress());
+		label_1.setBounds(50, 11, 105, 32);
+		contentPane.add(label_1);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(10, 42, 342, 364);
+		contentPane.add(scrollPane_1);
+		
+		list = new JList();
+		scrollPane_1.setViewportView(list);
+		list.setForeground(Color.WHITE);
+		list.setBackground(new Color(0, 128, 0));
+		
+		list.setModel(new DefaultListModel());
+		
+		Thread readMessages = new Thread(new Runnable(){
+
+			@Override
+			public void run() {
+				for(;;){
+				try {
+					ArrayList<Message> newMes = cl.readMessage();
+					for(Message m : newMes){
+						System.out.println(m);
+						((DefaultListModel)list.getModel()).addElement(m.toString());
+					}
+				} catch (ClassNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					JOptionPane.showMessageDialog(contentPane, "Lost connection to server");
+					System.exit(1);
+				}
+				}
+				
+			}
+			
+		});
+		readMessages.start();
+		
+
+	}
+}

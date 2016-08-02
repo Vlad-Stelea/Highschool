@@ -1,0 +1,30 @@
+import java.io.Serializable;
+
+//done
+public class Texts implements Message,Serializable {
+	private  String contents;
+	private  String sender;
+	public Texts(String sen,String mes){
+		setContents(mes);
+		sender = sen;
+		
+	}
+	@Override
+	public String getSender() {
+		return sender;
+	}
+
+	@Override
+	public Object getContents() {
+		return contents;
+	}
+	
+	public String toString(){
+		return contents + " : " + sender + "\n";
+	}
+	
+	private void setContents(String o){
+		contents = o;
+	}
+
+}

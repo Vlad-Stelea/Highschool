@@ -1,0 +1,13 @@
+D:\Unity Project\Bulldozer Simulator\Temp\bin\Debug\Assembly-CSharp.dll
+D:\Unity Project\Bulldozer Simulator\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\Unity Project\Bulldozer Simulator\Temp\bin\Debug\UnityEditor.dll
+D:\Unity Project\Bulldozer Simulator\Temp\bin\Debug\UnityEngine.dll
+D:\Unity Project\Bulldozer Simulator\Temp\bin\Debug\UnityEngine.UI.dll
+D:\Unity Project\Bulldozer Simulator\Temp\bin\Debug\Mono.Cecil.dll
+D:\Unity Project\Bulldozer Simulator\Temp\bin\Debug\Unity.SerializationLogic.dll
+D:\Unity Project\Bulldozer Simulator\Temp\bin\Debug\Unity.DataContract.dll
+D:\Unity Project\Bulldozer Simulator\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\Unity Project\Bulldozer Simulator\Temp\bin\Debug\Unity.CecilTools.dll
+D:\Unity Project\Bulldozer Simulator\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+D:\Unity Project\Bulldozer Simulator\obj\Debug\Assembly-CSharp.dll
+D:\Unity Project\Bulldozer Simulator\obj\Debug\Assembly-CSharp.pdb

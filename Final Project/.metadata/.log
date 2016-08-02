@@ -1,0 +1,2040 @@
+!SESSION 2016-06-07 15:03:12.522 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+This is a continuation of log file F:\CS\AP  CS\Final Project\.metadata\.bak_0.log
+Created Time: 2016-06-07 15:03:30.753
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-06-07 15:03:31.229
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '477'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-07 15:03:49.937
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-07 15:03:50.021
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Vlad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-07 15:03:56.625
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-07 15:03:58.586
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-07 15:03:58.744
+!MESSAGE Installing cpp if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-07 15:03:59.323
+!MESSAGE Installedcpp
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-07 15:03:59.392
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-07 15:03:59.420
+!MESSAGE Installedjava
+
+!ENTRY org.eclipse.ui 4 0 2016-06-07 15:33:33.292
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 1034
+	at org.eclipse.jdt.internal.ui.dialogs.OptionalMessageDialog.buttonPressed(OptionalMessageDialog.java:116)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:341)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.informUserAboutEmptyDefaultCategory(ContentAssistProcessor.java:602)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.getDefaultCategories(ContentAssistProcessor.java:504)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.getCategoryIteration(ContentAssistProcessor.java:492)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.setCategoryIteration(ContentAssistProcessor.java:487)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.access$3(ContentAssistProcessor.java:486)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor$CompletionListener.assistSessionStarted(ContentAssistProcessor.java:117)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.fireSessionBeginEvent(ContentAssistant.java:2362)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.prepareToShowCompletions(ContentAssistant.java:1751)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.access$6(ContentAssistant.java:1742)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:382)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2016-06-08 07:19:21.362 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-06-08 07:19:46.455
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '353'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-08 07:20:06.544
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-08 07:20:06.575
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'H:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-06-08 16:51:50.711 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.wst.common.frameworks 4 0 2016-06-08 16:51:52.537
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.common.frameworks [536]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.common.frameworks.ui 4 0 2016-06-08 16:51:52.568
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.common.frameworks.ui [537]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+       org.eclipse.wst.common.frameworks [536]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.common.ui 4 0 2016-06-08 16:51:52.584
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.common.ui [539]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.101,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.sse.ui 4 0 2016-06-08 16:51:52.599
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.sse.ui [542]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.validation; bundle-version="[1.2.100,1.3.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.validation; bundle-version="1.2.600.v201501211647"; singleton:="true"
+       org.eclipse.wst.validation [543]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+              org.eclipse.wst.common.frameworks [536]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.validation 4 0 2016-06-08 16:51:52.621
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.validation [543]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+       org.eclipse.wst.common.frameworks [536]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.validation.ui 4 0 2016-06-08 16:51:52.637
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.validation.ui [544]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks.ui; bundle-version="[1.1.200,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks.ui; bundle-version="1.2.300.v201401292115"; singleton:="true"
+       org.eclipse.wst.common.frameworks.ui [537]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+              org.eclipse.wst.common.frameworks [536]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.xml.core 4 0 2016-06-08 16:51:52.653
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.xml.core [545]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,1.3.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.emf; bundle-version="[1.1.300,1.3.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.emf; bundle-version="1.2.300.v201501292352"; singleton:="true"
+       org.eclipse.wst.common.emf [645]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+              org.eclipse.wst.common.frameworks [536]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.emfworkbench.integration; bundle-version="[1.1.300,1.3.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.emfworkbench.integration; bundle-version="1.2.101.v201107140600"; singleton:="true"
+       org.eclipse.wst.common.emfworkbench.integration [646]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.validation; bundle-version="[1.2.100,1.3.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.wst.validation; bundle-version="1.2.600.v201501211647"; singleton:="true"
+       org.eclipse.wst.validation [543]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.200,3.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+       org.eclipse.jem.util [607]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.xml.ui 4 0 2016-06-08 16:51:52.668
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.xml.ui [546]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.sse.ui; bundle-version="[1.3.200,1.4.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.sse.ui; bundle-version="1.3.301.v201501151629"; singleton:="true"
+       org.eclipse.wst.sse.ui [542]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.validation; bundle-version="[1.2.100,1.3.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.validation; bundle-version="1.2.600.v201501211647"; singleton:="true"
+              org.eclipse.wst.validation [543]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+                     org.eclipse.wst.common.frameworks [536]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2016-06-08 16:51:52.668
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.core [548]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.core [559]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.platform [568]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                  -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                     org.eclipse.jst.server.core [632]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                            org.eclipse.wst.server.core [658]
+                              Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.datatools 4 0 2016-06-08 16:51:52.684
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.datatools [549]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.dbdefinition.genericJDBC; resolution:="optional"
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.appengine.eclipse.core [548]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.core [559]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.platform [568]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                         -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                            org.eclipse.jst.server.core [632]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                   org.eclipse.wst.server.core [658]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.webtools 4 0 2016-06-08 16:51:52.684
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.webtools [550]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.appengine.eclipse.core [548]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.core [559]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.platform [568]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                         -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                            org.eclipse.jst.server.core [632]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                   org.eclipse.wst.server.core [658]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.wtp 4 0 2016-06-08 16:51:52.700
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.wtp [551]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.appengine.eclipse.core [548]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.core [559]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.platform [568]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                         -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                            org.eclipse.jst.server.core [632]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                   org.eclipse.wst.server.core [658]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.wtp.jpa 4 0 2016-06-08 16:51:52.700
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.wtp.jpa [552]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.wtp
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.wtp; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.appengine.eclipse.wtp [551]
+         Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+           -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.appengine.eclipse.core [548]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.core [559]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                            com.google.gdt.eclipse.platform [568]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                                -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                                   org.eclipse.jst.server.core [632]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                          org.eclipse.wst.server.core [658]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.wtp.jpa.e43 4 0 2016-06-08 16:51:52.722
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.wtp.jpa.e43 [553]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.wtp
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.wtp; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.appengine.eclipse.wtp [551]
+         Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+           -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.appengine.eclipse.core [548]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.core [559]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                            com.google.gdt.eclipse.platform [568]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                                -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                                   org.eclipse.jst.server.core [632]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                          org.eclipse.wst.server.core [658]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.wtp.swarm 4 0 2016-06-08 16:51:52.727
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.wtp.swarm [554]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.wtp
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.wtp; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.appengine.eclipse.wtp [551]
+         Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+           -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.appengine.eclipse.core [548]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.core [559]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                            com.google.gdt.eclipse.platform [568]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                                -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                                   org.eclipse.jst.server.core [632]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                          org.eclipse.wst.server.core [658]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.appengine.api 4 0 2016-06-08 16:51:52.736
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.appengine.api [556]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.core [559]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.platform [568]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                  -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                     org.eclipse.jst.server.core [632]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                            org.eclipse.wst.server.core [658]
+                              Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.appengine.swarm 4 0 2016-06-08 16:51:52.743
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.appengine.swarm [557]
+  Unresolved requirement: Require-Bundle: com.google.gwt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gwt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gwt.eclipse.core [572]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.core [559]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.platform [568]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                         -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                            org.eclipse.jst.server.core [632]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                   org.eclipse.wst.server.core [658]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.appengine.swarm_backend 4 0 2016-06-08 16:51:52.749
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.appengine.swarm_backend [558]
+  Unresolved requirement: Require-Bundle: com.google.gwt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gwt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gwt.eclipse.core [572]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.core [559]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.platform [568]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                         -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                            org.eclipse.jst.server.core [632]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                   org.eclipse.wst.server.core [658]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.core 4 0 2016-06-08 16:51:52.755
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.core [559]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.platform [568]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+           -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+              org.eclipse.jst.server.core [632]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                     org.eclipse.wst.server.core [658]
+                       Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.drive 4 0 2016-06-08 16:51:52.764
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.drive [560]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.login
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.login; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.login [565]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.core [559]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.platform [568]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                         -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                            org.eclipse.jst.server.core [632]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                   org.eclipse.wst.server.core [658]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.gph 4 0 2016-06-08 16:51:52.795
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.gph [561]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.login
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.login; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.login [565]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.core [559]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.platform [568]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                         -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                            org.eclipse.jst.server.core [632]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                   org.eclipse.wst.server.core [658]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.gph.hge 4 0 2016-06-08 16:51:52.803
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.gph.hge [562]
+  Unresolved requirement: Require-Bundle: com.vectrace.MercurialEclipse; resolution:="optional"
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.core [559]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.platform [568]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                  -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                     org.eclipse.jst.server.core [632]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                            org.eclipse.wst.server.core [658]
+                              Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.gph.subclipse 4 0 2016-06-08 16:51:52.812
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.gph.subclipse [563]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.gph
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.gph; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.gph [561]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.login
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.login; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.login [565]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.core [559]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                            com.google.gdt.eclipse.platform [568]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                                -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                                   org.eclipse.jst.server.core [632]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                          org.eclipse.wst.server.core [658]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.gph.subversive 4 0 2016-06-08 16:51:52.821
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.gph.subversive [564]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.gph
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.gph; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.gph [561]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.login
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.login; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.login [565]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.core [559]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                            com.google.gdt.eclipse.platform [568]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                                -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                                   org.eclipse.jst.server.core [632]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                          org.eclipse.wst.server.core [658]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.login 4 0 2016-06-08 16:51:52.831
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.login [565]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.core [559]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.platform [568]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                  -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                     org.eclipse.jst.server.core [632]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                            org.eclipse.wst.server.core [658]
+                              Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.managedapis 4 0 2016-06-08 16:51:52.836
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.managedapis [566]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.xml.core
+    -> Bundle-SymbolicName: org.eclipse.wst.xml.core; bundle-version="1.1.902.v201501211904"; singleton:="true"
+       org.eclipse.wst.xml.core [545]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,1.3.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.emf; bundle-version="[1.1.300,1.3.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.emf; bundle-version="1.2.300.v201501292352"; singleton:="true"
+              org.eclipse.wst.common.emf [645]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+                     org.eclipse.wst.common.frameworks [536]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.emfworkbench.integration; bundle-version="[1.1.300,1.3.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.emfworkbench.integration; bundle-version="1.2.101.v201107140600"; singleton:="true"
+              org.eclipse.wst.common.emfworkbench.integration [646]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.validation; bundle-version="[1.2.100,1.3.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.wst.validation; bundle-version="1.2.600.v201501211647"; singleton:="true"
+              org.eclipse.wst.validation [543]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.200,3.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+              org.eclipse.jem.util [607]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.maven 4 0 2016-06-08 16:51:52.842
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.maven [567]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.core [559]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.platform [568]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                  -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                     org.eclipse.jst.server.core [632]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                            org.eclipse.wst.server.core [658]
+                              Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.platform 4 0 2016-06-08 16:51:52.848
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.platform [568]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+    -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+       org.eclipse.jst.server.core [632]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+              org.eclipse.wst.server.core [658]
+                Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.suite 4 0 2016-06-08 16:51:52.856
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.suite [569]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core; visibility:="reexport"
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.appengine.eclipse.core [548]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.core [559]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.platform [568]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                         -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                            org.eclipse.jst.server.core [632]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                   org.eclipse.wst.server.core [658]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.suite.ext 4 0 2016-06-08 16:51:52.862
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.suite.ext [570]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.suite
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.suite; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.suite [569]
+         Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.appengine.eclipse.core [548]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.core [559]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                            com.google.gdt.eclipse.platform [568]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                                -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                                   org.eclipse.jst.server.core [632]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                          org.eclipse.wst.server.core [658]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.suite.ext.e38 4 0 2016-06-08 16:51:52.866
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.suite.ext.e38 [571]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.suite
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.suite; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.suite [569]
+         Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.appengine.eclipse.core [548]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                     com.google.gdt.eclipse.core [559]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+                            com.google.gdt.eclipse.platform [568]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                                -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                                   org.eclipse.jst.server.core [632]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                                          org.eclipse.wst.server.core [658]
+                                            Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                                            Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gwt.eclipse.core 4 0 2016-06-08 16:51:52.870
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gwt.eclipse.core [572]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.core [559]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.platform [568]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                  -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                     org.eclipse.jst.server.core [632]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                            org.eclipse.wst.server.core [658]
+                              Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gwt.eclipse.oophm 4 0 2016-06-08 16:51:52.874
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gwt.eclipse.oophm [574]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+       com.google.gdt.eclipse.core [559]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r44"; singleton:="true"
+              com.google.gdt.eclipse.platform [568]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.server.core
+                  -> Bundle-SymbolicName: org.eclipse.jst.server.core; bundle-version="1.2.400.v20130918_1641"; singleton:="true"
+                     org.eclipse.jst.server.core [632]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+                            org.eclipse.wst.server.core [658]
+                              Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jem 4 0 2016-06-08 16:51:52.877
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jem [606]
+  Unresolved requirement: Require-Bundle: org.eclipse.jem.proxy; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+       org.eclipse.jem.util [607]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jem.util 4 0 2016-06-08 16:51:52.881
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jem.util [607]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jem.workbench 4 0 2016-06-08 16:51:52.882
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jem.workbench [608]
+  Unresolved requirement: Require-Bundle: org.eclipse.jem; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jem; bundle-version="2.0.600.v201302011850"; singleton:="true"
+       org.eclipse.jem [606]
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.proxy; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+              org.eclipse.jem.util [607]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.common.core 4 0 2016-06-08 16:51:52.882
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.common.core [609]
+  Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.1.100,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+       org.eclipse.jem.util [607]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.common.ui 4 0 2016-06-08 16:51:52.882
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.common.ui [610]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.common.core; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.common.core; bundle-version="1.4.0.v201310142259"; singleton:="true"
+       org.eclipse.jpt.common.core [609]
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.1.100,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+              org.eclipse.jem.util [607]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.jpa.annotate 4 0 2016-06-08 16:51:52.882
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.annotate [612]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.100.v201311210251"; singleton:="true"
+       org.eclipse.jpt.jpa.db [614]
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.common.core; bundle-version="[1.2.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.common.core; bundle-version="1.4.0.v201310142259"; singleton:="true"
+              org.eclipse.jpt.common.core [609]
+                Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.1.100,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+                     org.eclipse.jem.util [607]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2016-06-08 16:51:52.897
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.core [613]
+  Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.100,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+       org.eclipse.jem.util [607]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.jpa.db 4 0 2016-06-08 16:51:52.897
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.db [614]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.common.core; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.common.core; bundle-version="1.4.0.v201310142259"; singleton:="true"
+       org.eclipse.jpt.common.core [609]
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.1.100,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+              org.eclipse.jem.util [607]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.jpa.db.ui 4 0 2016-06-08 16:51:52.897
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.db.ui [615]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.100.v201311210251"; singleton:="true"
+       org.eclipse.jpt.jpa.db [614]
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.common.core; bundle-version="[1.2.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.common.core; bundle-version="1.4.0.v201310142259"; singleton:="true"
+              org.eclipse.jpt.common.core [609]
+                Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.1.100,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+                     org.eclipse.jem.util [607]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.jpa.gen 4 0 2016-06-08 16:51:52.897
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.gen [616]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.100.v201311210251"; singleton:="true"
+       org.eclipse.jpt.jpa.db [614]
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.common.core; bundle-version="[1.2.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.common.core; bundle-version="1.4.0.v201310142259"; singleton:="true"
+              org.eclipse.jpt.common.core [609]
+                Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.1.100,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+                     org.eclipse.jem.util [607]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jpt.jpa.ui 4 0 2016-06-08 16:51:52.913
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.ui [617]
+  Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.100,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+       org.eclipse.jem.util [607]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.common.frameworks 4 0 2016-06-08 16:51:52.913
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.common.frameworks [620]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+       org.eclipse.wst.common.frameworks [536]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.common.ui 4 0 2016-06-08 16:51:52.913
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.common.ui [623]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.modulecore; bundle-version="[1.1.300,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.modulecore; bundle-version="1.2.401.v201408132036"; singleton:="true"
+       org.eclipse.wst.common.modulecore [647]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+              org.eclipse.wst.common.frameworks [536]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2016-06-08 16:51:52.913
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee [624]
+  Unresolved requirement: Require-Bundle: org.eclipse.jem.workbench; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jem.workbench; bundle-version="2.0.400.v201302011850"; singleton:="true"
+       org.eclipse.jem.workbench [608]
+         Unresolved requirement: Require-Bundle: org.eclipse.jem; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jem; bundle-version="2.0.600.v201302011850"; singleton:="true"
+              org.eclipse.jem [606]
+                Unresolved requirement: Require-Bundle: org.eclipse.jem.proxy; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+                     org.eclipse.jem.util [607]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee.core 4 0 2016-06-08 16:51:52.929
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.core [625]
+  Unresolved requirement: Require-Bundle: org.eclipse.jem; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jem; bundle-version="2.0.600.v201302011850"; singleton:="true"
+       org.eclipse.jem [606]
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.proxy; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+              org.eclipse.jem.util [607]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee.ejb 4 0 2016-06-08 16:51:52.929
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.ejb [626]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee; bundle-version="[1.1.501,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee; bundle-version="1.1.802.v201502041526"; singleton:="true"
+       org.eclipse.jst.j2ee [624]
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.workbench; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jem.workbench; bundle-version="2.0.400.v201302011850"; singleton:="true"
+              org.eclipse.jem.workbench [608]
+                Unresolved requirement: Require-Bundle: org.eclipse.jem; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jem; bundle-version="2.0.600.v201302011850"; singleton:="true"
+                     org.eclipse.jem [606]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jem.proxy; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+                            org.eclipse.jem.util [607]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee.ejb.annotation.model 4 0 2016-06-08 16:51:52.929
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.ejb.annotation.model [627]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+       org.eclipse.wst.common.frameworks [536]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee.jca 4 0 2016-06-08 16:51:52.929
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.jca [628]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee; bundle-version="[1.1.501,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee; bundle-version="1.1.802.v201502041526"; singleton:="true"
+       org.eclipse.jst.j2ee [624]
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.workbench; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jem.workbench; bundle-version="2.0.400.v201302011850"; singleton:="true"
+              org.eclipse.jem.workbench [608]
+                Unresolved requirement: Require-Bundle: org.eclipse.jem; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jem; bundle-version="2.0.600.v201302011850"; singleton:="true"
+                     org.eclipse.jem [606]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jem.proxy; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+                            org.eclipse.jem.util [607]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee.ui 4 0 2016-06-08 16:51:52.944
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.ui [629]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks.ui; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks.ui; bundle-version="1.2.300.v201401292115"; singleton:="true"
+       org.eclipse.wst.common.frameworks.ui [537]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+              org.eclipse.wst.common.frameworks [536]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.j2ee.web 4 0 2016-06-08 16:51:52.944
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.web [630]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee; bundle-version="[1.1.501,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee; bundle-version="1.1.802.v201502041526"; singleton:="true"
+       org.eclipse.jst.j2ee [624]
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.workbench; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jem.workbench; bundle-version="2.0.400.v201302011850"; singleton:="true"
+              org.eclipse.jem.workbench [608]
+                Unresolved requirement: Require-Bundle: org.eclipse.jem; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jem; bundle-version="2.0.600.v201302011850"; singleton:="true"
+                     org.eclipse.jem [606]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jem.proxy; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+                            org.eclipse.jem.util [607]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.jee 4 0 2016-06-08 16:51:52.944
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jee [631]
+  Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+       org.eclipse.jem.util [607]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.server.core 4 0 2016-06-08 16:51:52.960
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.server.core [632]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.304,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+       org.eclipse.wst.server.core [658]
+         Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.common.emf 4 0 2016-06-08 16:51:52.960
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.common.emf [645]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+       org.eclipse.wst.common.frameworks [536]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.common.emfworkbench.integration 4 0 2016-06-08 16:51:52.960
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.common.emfworkbench.integration [646]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+       org.eclipse.wst.common.frameworks [536]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.common.modulecore 4 0 2016-06-08 16:51:52.960
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.common.modulecore [647]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+       org.eclipse.wst.common.frameworks [536]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.common.modulecore.ui 4 0 2016-06-08 16:51:52.977
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.common.modulecore.ui [648]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.modulecore; bundle-version="[1.2.101,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.modulecore; bundle-version="1.2.401.v201408132036"; singleton:="true"
+       org.eclipse.wst.common.modulecore [647]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+              org.eclipse.wst.common.frameworks [536]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.css.core 4 0 2016-06-08 16:51:52.981
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.css.core [650]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.xml.core; bundle-version="[1.1.500,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.xml.core; bundle-version="1.1.902.v201501211904"; singleton:="true"
+       org.eclipse.wst.xml.core [545]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,1.3.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.emf; bundle-version="[1.1.300,1.3.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.emf; bundle-version="1.2.300.v201501292352"; singleton:="true"
+              org.eclipse.wst.common.emf [645]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+                     org.eclipse.wst.common.frameworks [536]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.emfworkbench.integration; bundle-version="[1.1.300,1.3.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.emfworkbench.integration; bundle-version="1.2.101.v201107140600"; singleton:="true"
+              org.eclipse.wst.common.emfworkbench.integration [646]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.validation; bundle-version="[1.2.100,1.3.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.wst.validation; bundle-version="1.2.600.v201501211647"; singleton:="true"
+              org.eclipse.wst.validation [543]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.200,3.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+              org.eclipse.jem.util [607]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.css.ui 4 0 2016-06-08 16:51:52.982
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.css.ui [651]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.xml.ui; bundle-version="[1.1.100,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.xml.ui; bundle-version="1.1.501.v201501212057"; singleton:="true"
+       org.eclipse.wst.xml.ui [546]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.sse.ui; bundle-version="[1.3.200,1.4.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.sse.ui; bundle-version="1.3.301.v201501151629"; singleton:="true"
+              org.eclipse.wst.sse.ui [542]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.validation; bundle-version="[1.2.100,1.3.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.validation; bundle-version="1.2.600.v201501211647"; singleton:="true"
+                     org.eclipse.wst.validation [543]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+                            org.eclipse.wst.common.frameworks [536]
+                              Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.html.core 4 0 2016-06-08 16:51:52.982
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.html.core [652]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.xml.core; bundle-version="[1.1.500,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.xml.core; bundle-version="1.1.902.v201501211904"; singleton:="true"
+       org.eclipse.wst.xml.core [545]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,1.3.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.emf; bundle-version="[1.1.300,1.3.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.emf; bundle-version="1.2.300.v201501292352"; singleton:="true"
+              org.eclipse.wst.common.emf [645]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+                     org.eclipse.wst.common.frameworks [536]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.emfworkbench.integration; bundle-version="[1.1.300,1.3.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.emfworkbench.integration; bundle-version="1.2.101.v201107140600"; singleton:="true"
+              org.eclipse.wst.common.emfworkbench.integration [646]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.validation; bundle-version="[1.2.100,1.3.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.wst.validation; bundle-version="1.2.600.v201501211647"; singleton:="true"
+              org.eclipse.wst.validation [543]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jem.util; bundle-version="[2.0.200,3.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.jem.util; bundle-version="2.1.200.v201404021815"; singleton:="true"
+              org.eclipse.jem.util [607]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.1.201,2.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.html.ui 4 0 2016-06-08 16:51:52.982
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.html.ui [653]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.sse.ui; bundle-version="[1.3.200,1.4.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.sse.ui; bundle-version="1.3.301.v201501151629"; singleton:="true"
+       org.eclipse.wst.sse.ui [542]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.validation; bundle-version="[1.2.100,1.3.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.validation; bundle-version="1.2.600.v201501211647"; singleton:="true"
+              org.eclipse.wst.validation [543]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.1.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+                     org.eclipse.wst.common.frameworks [536]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2016-06-08 16:51:52.982
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.server.core [658]
+  Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.server.ui 4 0 2016-06-08 16:51:52.998
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.server.ui [660]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.server.core; bundle-version="[1.0.103,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.server.core; bundle-version="1.6.2.v201409292121"; singleton:="true"
+       org.eclipse.wst.server.core [658]
+         Unresolved requirement: Require-Bundle: org.eclipse.update.core; bundle-version="[3.2.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.web 4 0 2016-06-08 16:51:52.998
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.web [661]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+       org.eclipse.wst.common.frameworks [536]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.web.ui 4 0 2016-06-08 16:51:53.013
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.web.ui [662]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.frameworks; bundle-version="[1.2.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.frameworks; bundle-version="1.2.200.v201304241450"; singleton:="true"
+       org.eclipse.wst.common.frameworks [536]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.core; bundle-version="[1.2.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-06-08 16:52:02.525
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '477'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-08 16:52:32.461
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-08 16:52:32.546
+!MESSAGE Installing tools if necessary
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-08 16:52:32.646
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Vlad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-08 16:52:34.845
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-08 16:52:35.028
+!MESSAGE Installing cpp if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-08 16:52:35.093
+!MESSAGE Installedcpp
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-08 16:52:35.794
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-06-08 16:52:35.832
+!MESSAGE Installedjava
+
+!ENTRY org.eclipse.ui 4 0 2016-06-08 17:09:17.905
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 1034
+	at org.eclipse.jdt.internal.ui.dialogs.OptionalMessageDialog.buttonPressed(OptionalMessageDialog.java:116)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:341)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.informUserAboutEmptyDefaultCategory(ContentAssistProcessor.java:602)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.getDefaultCategories(ContentAssistProcessor.java:504)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.getCategoryIteration(ContentAssistProcessor.java:492)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.setCategoryIteration(ContentAssistProcessor.java:487)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.access$3(ContentAssistProcessor.java:486)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor$CompletionListener.assistSessionStarted(ContentAssistProcessor.java:117)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.fireSessionBeginEvent(ContentAssistant.java:2362)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.prepareToShowCompletions(ContentAssistant.java:1751)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.access$6(ContentAssistant.java:1742)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:382)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2016-06-09 07:45:08.306 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-06-09 07:45:32.289
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '353'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-09 07:46:09.020
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-09 07:46:09.051
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'H:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 38c33bb21d6d1794fa3919ba670e82e7
+timeCreated: 1457226007
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Batter-Center
+    100002: Batter-Gaurd-Left
+    100004: Batter-Gaurd-Right
+    100006: Batter-Left
+    100008: Batter-Right
+    100010: Goal-Support-Center
+    100012: HighGoal-Center
+    100014: HighGoal-Connection-Center
+    100016: HighGoal-Left
+    100018: HighGoal-Right
+    100020: HighGoalConnection-Left
+    100022: HighGoalConnection-Right
+    100024: LowGoal-Left
+    100026: LowGoal-Right
+    100028: //RootNode
+    400000: Batter-Center
+    400002: Batter-Gaurd-Left
+    400004: Batter-Gaurd-Right
+    400006: Batter-Left
+    400008: Batter-Right
+    400010: Goal-Support-Center
+    400012: HighGoal-Center
+    400014: HighGoal-Connection-Center
+    400016: HighGoal-Left
+    400018: HighGoal-Right
+    400020: HighGoalConnection-Left
+    400022: HighGoalConnection-Right
+    400024: LowGoal-Left
+    400026: LowGoal-Right
+    400028: //RootNode
+    2300000: Batter-Center
+    2300002: Batter-Gaurd-Left
+    2300004: Batter-Gaurd-Right
+    2300006: Batter-Left
+    2300008: Batter-Right
+    2300010: Goal-Support-Center
+    2300012: HighGoal-Center
+    2300014: HighGoal-Connection-Center
+    2300016: HighGoal-Left
+    2300018: HighGoal-Right
+    2300020: HighGoalConnection-Left
+    2300022: HighGoalConnection-Right
+    2300024: LowGoal-Left
+    2300026: LowGoal-Right
+    3300000: Batter-Center
+    3300002: Batter-Gaurd-Left
+    3300004: Batter-Gaurd-Right
+    3300006: Batter-Left
+    3300008: Batter-Right
+    3300010: Goal-Support-Center
+    3300012: HighGoal-Center
+    3300014: HighGoal-Connection-Center
+    3300016: HighGoal-Left
+    3300018: HighGoal-Right
+    3300020: HighGoalConnection-Left
+    3300022: HighGoalConnection-Right
+    3300024: LowGoal-Left
+    3300026: LowGoal-Right
+    4300000: Batter-Gaurd-Right
+    4300002: Batter-Center
+    4300004: Goal-Support-Center
+    4300006: HighGoal-Connection-Center
+    4300008: HighGoal-Center
+    4300010: HighGoal-Right
+    4300012: HighGoalConnection-Right
+    4300014: LowGoal-Right
+    4300016: HighGoal-Left
+    4300018: HighGoalConnection-Left
+    4300020: LowGoal-Left
+    4300022: Batter-Right
+    4300024: Batter-Left
+    4300026: Batter-Gaurd-Left
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
